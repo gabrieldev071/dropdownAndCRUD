@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<title>DropDwb | CRUD </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" id="viewport" content="width=device-width, user-scalable=no" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" />
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="shortcut icon" href="./img/lightbulb-solid.svg" type="image/x-icon">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/78f50e1103.js" crossorigin="anonymous"></script>
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<img class="logo" src="" alt="" />
+
+	<div class="container__principal">
+		<input type="text" name="categoria" id="" placeholder="Selecione a categoria" onFocus="dropDown(0)"
+			onBlur="dropDown(1)">
+
+		<div class="dropDown">
+			<div class="listDropDown">
+				<div class="item" id="item-1" onMouseDown="category(1)">HTML5</div>
+				<div class="item" id="item-2" onMouseDown="category(2)">CSS3</div>
+				<div class="item" id="item-3" onMouseDown="category(3)">JavaScript</div>
+				<div class="item" id="item-4" onMouseDown="category(4)">SASS</div>
+				<div class="item" id="item-5" onMouseDown="category(5)">React</div>
+				<div class="item" id="item-6" onMouseDown="category(6)">MySQL</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

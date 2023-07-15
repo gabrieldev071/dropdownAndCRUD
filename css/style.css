@@ -1,0 +1,98 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;  
+    --colorPrimary: #121212;
+    --colorSecundary: #272626;
+    --colortertiary: #D8D8D8;
+}
+html{
+    padding: 30px;
+    line-height: 18px;  
+}
+html, body, .container{
+    height: 100%;
+    background-color: var(--colorPrimary)
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+.container__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    line-height: 30px;
+    color: var(--colortertiary);
+}
+
+input {
+    height: 4rem; /* 30px */
+    width: 40rem; /* 400px */
+    padding: 0 0.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.05rem solid #2d2d2d;
+    font-size: 2rem;
+    color: var(--colortertiary);
+    background-color: var(--colorSecundary);
+}
+
+/* Adaptativo para outros navegadores */
+::-webkit-input-placeholder{
+    color:#777777
+}
+input::-moz-placeholder{
+    color:#777777
+}
+
+.dropDown {
+    display: none;
+    width: 40rem;
+    height: 9rem;
+    margin-top: 1.5rem;
+    border: 0.05rem solid #2d2d2d;
+    border-radius: 0.5rem;
+    background-color: var(--colorSecundary);
+    overflow: auto; /* rolagem na barra */
+    transform: translate(0px, -5px);
+}
+
+
+::-webkit-scrollbar { /* background da barra de rolagem */
+    background-color: #1d1d1d;
+    width: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+::-webkit-scrollbar-thumb { /* barra de rolagem em si */
+    background-color: #5b5b5b;
+    border-radius: 0.5rem;
+}
+
+.item {
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #121212;
+    padding-left: 0.7rem;
+    transition: .3s; /* voltar ao normal */
+}
+
